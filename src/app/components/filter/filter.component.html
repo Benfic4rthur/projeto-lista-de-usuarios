@@ -1,0 +1,34 @@
+<div class="filter">
+  <form class="form">
+    <div class="form__name">
+      <mat-form-field class="example-full-width">
+        <mat-label>Nome:</mat-label>
+        <input matInput />
+      </mat-form-field>
+    </div>
+    <div class="form__date-picker">
+      <mat-form-field>
+        <mat-label>Data de cadastro:</mat-label>
+        <input matInput [matDatepicker]="picker" />
+        <mat-datepicker-toggle
+          matIconSuffix
+          [for]="picker"
+        ></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
+    <div class="form__status">
+      <mat-form-field>
+        <mat-label>Status</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let status of status">{{
+            status.viewValue
+          }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="form__button">
+      <button mat-raised-button color="primary">Filtrar</button>
+    </div>
+  </form>
+</div>
