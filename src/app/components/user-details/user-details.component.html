@@ -1,59 +1,65 @@
 <div class="user-details">
   <mat-list>
     <mat-list-item class="u-text-align-center">
-      <span>Detalhes do usuário</span>
+      <span class="user-details__title">Detalhes do usuário</span>
     </mat-list-item>
     <mat-divider></mat-divider>
-    <mat-list-item class="u-text-align-center">
-      <span>Nome:</span>
-      <span>xxxxx</span>
+    <mat-list-item>
+      <span class="user-details__campos">Nome:</span>
+      <span>{{ user.nome }}</span>
     </mat-list-item>
     <mat-divider></mat-divider>
-    <mat-list-item class="u-text-align-center">
-      <span>Email:</span>
-      <span>xxxxx</span>
+    <mat-list-item>
+      <span class="user-details__campos">Email:</span>
+      <span>{{ user.email }}</span>
     </mat-list-item>
     <mat-divider></mat-divider>
-    <mat-list-item class="u-text-align-center">
-      <span>Senha:</span>
-      <span>xxxxx</span>
+    <mat-list-item>
+      <span class="user-details__campos">Senha:</span>
+      <span>{{ user.senha }}</span>
     </mat-list-item>
     <mat-divider></mat-divider>
-    <mat-list-item class="u-text-align-center">
-      <span>Idade:</span>
-      <span>xxxxx</span>
+    <mat-list-item>
+      <span class="user-details__campos">Idade:</span>
+      <span>{{ user.idade }}</span>
     </mat-list-item>
     <mat-divider></mat-divider>
-    <mat-list-item class="u-text-align-center">
-      <span>Endereço:</span>
-      <span>xxxxx, xxxxx, xxxxx</span>
+    <mat-list-item>
+      <span class="user-details__campos">Endereço:</span>
+      <span
+        >{{ user.endereco?.rua }}, {{ user.endereco?.numero }},
+        {{ user.endereco?.cidade }} - {{ user.endereco?.estado }}
+      </span>
     </mat-list-item>
     <mat-divider></mat-divider>
-    <mat-list-item class="u-text-align-center">
-      <span>Telefone:</span>
-      <span>xxxxx</span>
+    <mat-list-item>
+      <span class="user-details__campos">Telefone:</span>
+      <span>{{ user.telefone }}</span>
     </mat-list-item>
     <mat-divider></mat-divider>
-    <mat-list-item class="u-text-align-center">
-      <span>Ativo:</span>
-      <span>xxxxx</span>
+    <mat-list-item>
+      <span class="user-details__campos">Ativo:</span>
+      <span>{{ user.ativo }}</span>
     </mat-list-item>
     <mat-divider></mat-divider>
-    <mat-list-item class="u-text-align-center">
-      <span>Função:</span>
-      <span>xxxx</span>
+    <mat-list-item>
+      <span class="user-details__campos">Função:</span>
+      <span>{{ user.funcao }}</span>
     </mat-list-item>
     <mat-divider></mat-divider>
-    <mat-list-item class="u-text-align-center">
-      <span>Data de Cadastro:</span>
-      <span>xxxx</span>
+    <mat-list-item>
+      <span class="user-details__campos">Data de Cadastro:</span>
+      <span>{{ user.dataCadastro }}</span>
     </mat-list-item>
     <mat-divider></mat-divider>
-    <mat-list-item class="u-text-align-center">
-      <span>Status:</span>
-      <span>xxxx</span>
+    <mat-list-item>
+      <span class="user-details__campos">Status:</span>
+      <span
+        >{{ user.status.online }}, {{ user.status.verificado }},
+        {{ user.status.assinaturaAtiva }},
+        {{ user.status.ultimoAcesso }}
+      </span>
     </mat-list-item>
     <mat-divider></mat-divider>
-
   </mat-list>
 </div>
