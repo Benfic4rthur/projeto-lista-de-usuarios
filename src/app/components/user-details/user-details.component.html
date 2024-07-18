@@ -26,10 +26,7 @@
     <mat-divider></mat-divider>
     <mat-list-item>
       <span class="user-details__campos">Endereço:</span>
-      <span
-        >{{ user.endereco?.rua }}, {{ user.endereco?.numero }},
-        {{ user.endereco?.cidade }} - {{ user.endereco?.estado }}
-      </span>
+      <span>{{ user.endereco | address }} </span>
     </mat-list-item>
     <mat-divider></mat-divider>
     <mat-list-item>
@@ -38,8 +35,8 @@
     </mat-list-item>
     <mat-divider></mat-divider>
     <mat-list-item>
-      <span class="user-details__campos">Ativo:</span>
-      <span>{{ user.ativo }}</span>
+      <span class="user-details__campos">Status:</span>
+      <span>{{ user.ativo | status }}</span>
     </mat-list-item>
     <mat-divider></mat-divider>
     <mat-list-item>
@@ -49,7 +46,7 @@
     <mat-divider></mat-divider>
     <mat-list-item>
       <span class="user-details__campos">Data de Cadastro:</span>
-      <span>{{ user.dataCadastro }}</span>
+      <span>{{ user.dataCadastro | date : "dd/MM/yyyy" }}</span>
     </mat-list-item>
     <mat-divider></mat-divider>
     <mat-list-item>

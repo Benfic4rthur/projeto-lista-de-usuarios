@@ -8,7 +8,7 @@ export interface IUser {
   idade: number;
   endereco: IAddress;
   telefone: string;
-  ativo: boolean;
+  ativo: boolean | null;
   funcao: string;
   dataCadastro: string;
   status: IStatus;
