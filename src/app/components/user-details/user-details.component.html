@@ -6,12 +6,12 @@
     <mat-divider></mat-divider>
     <mat-list-item>
       <span class="user-details__campos">Nome:</span>
-      <span>{{ user.nome }}</span>
+      <span>{{ user.nome | dashIfEmpty }}</span>
     </mat-list-item>
     <mat-divider></mat-divider>
     <mat-list-item>
       <span class="user-details__campos">Email:</span>
-      <span>{{ user.email }}</span>
+      <span>{{ user.email | dashIfEmpty }}</span>
     </mat-list-item>
     <mat-divider></mat-divider>
     <mat-list-item>
@@ -41,12 +41,12 @@
     <mat-divider></mat-divider>
     <mat-list-item>
       <span class="user-details__campos">Função:</span>
-      <span>{{ user.funcao }}</span>
+      <span>{{ user.funcao | dashIfEmpty }}</span>
     </mat-list-item>
     <mat-divider></mat-divider>
     <mat-list-item>
       <span class="user-details__campos">Data de Cadastro:</span>
-      <span>{{ user.dataCadastro | date : "dd/MM/yyyy" }}</span>
+      <span>{{ user.dataCadastro | date : "dd/MM/yyyy" | dashIfEmpty }}</span>
     </mat-list-item>
     <mat-divider></mat-divider>
     <mat-list-item>
