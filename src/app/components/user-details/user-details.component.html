@@ -49,14 +49,5 @@
       <span>{{ user.dataCadastro | date : "dd/MM/yyyy" | dashIfEmpty }}</span>
     </mat-list-item>
     <mat-divider></mat-divider>
-    <mat-list-item>
-      <span class="user-details__campos">Status:</span>
-      <span
-        >{{ user.status.online }}, {{ user.status.verificado }},
-        {{ user.status.assinaturaAtiva }},
-        {{ user.status.ultimoAcesso }}
-      </span>
-    </mat-list-item>
-    <mat-divider></mat-divider>
   </mat-list>
 </div>
