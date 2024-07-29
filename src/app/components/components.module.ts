@@ -9,7 +9,7 @@ import { PipesModule } from '../pipes/pipes.module';
 
 @NgModule({
   declarations: [UserDetailsComponent, FilterComponent, UsersListComponent],
-  imports: [AngularMaterialModule, FormsModule, CommonModule, PipesModule],
-  exports: [UserDetailsComponent, FilterComponent, UsersListComponent],
+  imports: [AngularMaterialModule, FormsModule , CommonModule, PipesModule],
+  exports: [UserDetailsComponent, FilterComponent, UsersListComponent ],
 })
 export class ComponentsModule {}
